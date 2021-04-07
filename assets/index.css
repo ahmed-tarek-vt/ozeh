@@ -1,0 +1,370 @@
+@media (min-width: 768px) {
+    * {
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: Cairo-Regular;
+    src: url(fonts/cairo/Cairo-Regular.ttf);
+}
+
+body {
+    background: #1B1C1E;
+    color: #fff;
+    position: relative;
+}
+
+span {
+    font-family: Cairo-Regular, sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2D2F33;
+    padding: 20px;
+}
+
+.notification {
+    position: relative;
+}
+
+.notificationsCount {
+    position: absolute;
+    background: #F23030;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .7rem;
+    top: -5px;
+    right: -5px;
+}
+
+.slider {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.offers-owl-carousel .owl-dot span {
+    background: #B6B8B8 !important;
+    width: 9px;
+    height: 9px;
+}
+
+.offers-owl-carousel .owl-dot.active span {
+    background: #FFFFFF !important;
+    height: 9px;
+    width: 18px;
+}
+
+.owl-stage {
+    right: -10px;
+}
+
+.location {
+    padding: 20px;
+}
+
+.locationContainer {
+    padding: 10px 20px;
+    border: 1px solid #707070;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.locationContainer .left span {
+    color: #99A884;
+}
+
+.locationContainer .right span {
+    color: #707070;
+}
+
+.servicesContainer {
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.services {
+    border-radius: 10px;
+}
+
+.services .top {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: flex-end;
+    border-radius: 10px 10px 0 0;
+}
+
+.services .top .image {
+    margin-left: 10px;
+    padding: 2px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.services .top span {
+    color: #000;
+}
+
+.services .bottom {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.services .bottom div {
+    margin-left: 10px;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: fixed;
+    background: #2D2F33;
+    bottom: 40px;
+    left: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+.chat:hover {
+    opacity: .7;
+}
+
+.chat div {
+    position: relative;
+}
+
+
+.chatCount {
+    position: absolute;
+    background: #F23030;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .7rem;
+    bottom: -5px;
+    right: -5px;
+}
+
+.category {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+    height: 105px;
+}
+
+.category img {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.categorySlider {
+    margin-top: 0;
+}
+
+.categories-owl-carousel .category.active {
+    background: #FFE6F9;
+    color: #000;
+}
+
+.categories-owl-carousel .category.active span {
+    color: #000;
+}
+
+.productsContainer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.product {
+    background: url("images/productBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 45%;
+}
+
+.product .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+.product .top .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product .top .oldPrice {
+    color: #B6B8B8;
+    font-size: 10px;
+}
+
+.product .top .price div {
+    display: flex;
+}
+
+.product .top .price .value {
+    font-size: 1.2rem;
+}
+
+.product .top .price .currency {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.product .title {
+    font-size: 1.2rem;
+}
+
+.product .desc {
+    font-size: .8rem;
+}
+
+.product .middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 8px 20px;
+}
+
+.product .bottom {
+    display: flex;
+    margin-top: 10px;
+}
+
+.product .bottom .right {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product .bottom .left {
+    width: 70%;
+    background: #C8AECF;
+    display: flex;
+    padding: 8px 8px;
+    justify-content: flex-end;
+    border-radius: 0 0 0 20px;
+    align-items: center;
+}
+
+.product .bottom img {
+    width: 20px;
+    height: 20px;
+}
+
+.product .bottom .left span {
+    color: #000;
+    margin-right: 10px;
+}
+
+.rate {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.rate .top {
+    height: 35%;
+    background: #fff;
+    opacity: .3;
+    z-index: 3;
+}
+
+.rate .bottom {
+    height: 65%;
+    border-radius: 25px 25px 0 0;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.rate .bottom .section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.rate .bottom .line {
+    width: 75px;
+    height: 8px;
+    background: #4D4D4D;
+    border-radius: 4px;
+}
+
+.rate .bottom img {
+    width: 50px;
+    height: 50px;
+}
+
+.bottomColored {
+    color: #99A884;
+}
+
+.rate .rating {
+    display: flex;
+    justify-content: space-between !important;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.ratingImages img {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.rate .btns {
+    display: flex;
+    justify-content: space-between !important;
+    margin-top: 25px;
+}
+
+.rate .btns button {
+    padding: 15px 70px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: #fff;
+    background: #000;
+}
+
+.rate .btns .rateBtn {
+    background: #99A884;
+    border: none;
+}
